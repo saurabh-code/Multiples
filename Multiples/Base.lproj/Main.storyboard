@@ -38,6 +38,9 @@
                                     <constraint firstAttribute="height" constant="192" id="IY7-6W-wKq"/>
                                 </constraints>
                                 <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="onPressPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s7Z-5l-dgp"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ksj-sR-w2g" userLabel="StartText">
                                 <rect key="frame" x="210" y="351" width="194" height="30"/>
@@ -87,6 +90,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="uuC-9x-iK8" id="Q6L-PS-Qw4"/>
+                        <outlet property="display" destination="YuF-WE-t29" id="fYI-vc-QPN"/>
+                        <outlet property="logo" destination="0cX-AE-pVs" id="prR-Zl-3kv"/>
+                        <outlet property="playButton" destination="ntn-c8-zps" id="e8V-3W-34I"/>
+                        <outlet property="startText" destination="Ksj-sR-w2g" id="DRp-fy-wQA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

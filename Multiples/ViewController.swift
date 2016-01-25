@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var startText: UITextField!
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var display: UILabel!
+    @IBOutlet weak var addButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +26,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func onPressPlay(sender: UIButton) {
+    }
 
 }
 
