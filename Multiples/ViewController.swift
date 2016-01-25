@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var display: UILabel!
     @IBOutlet weak var addButton: UIButton!
     
+    var multipler: Int = 0
+    var currentCount: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,7 +30,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onPressPlay(sender: UIButton) {
+        if startText.text != nil && startText.text != "" {
+            multipler = Int(startText.text!)!
+            reset(false)
+        }
+        print(multipler)
     }
-
+    
+    func reset (flag: Bool) {
+        logo.hidden = !flag
+        startText.hidden = !flag
+        playButton.hidden = !flag
+        display.hidden = flag
+        addButton.hidden = flag
+    }
 }
 
