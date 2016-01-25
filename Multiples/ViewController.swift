@@ -34,7 +34,6 @@ class ViewController: UIViewController {
             multipler = Int(startText.text!)!
             reset(false)
         }
-//        print(multipler)
     }
     
     @IBAction func onPressAdd(sender: UIButton) {

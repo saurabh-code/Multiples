@@ -71,6 +71,7 @@
                                 </constraints>
                                 <state key="normal" image="add"/>
                                 <connections>
+                                    <action selector="hcbweciewu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfW-KO-fw5"/>
                                     <action selector="onPressAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EjZ-e4-FFa"/>
                                 </connections>
                             </button>
