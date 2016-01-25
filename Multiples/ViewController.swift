@@ -34,7 +34,17 @@ class ViewController: UIViewController {
             multipler = Int(startText.text!)!
             reset(false)
         }
-        print(multipler)
+//        print(multipler)
+    }
+    
+    @IBAction func onPressAdd(sender: UIButton) {
+        var temp: Int = currentCount + multipler;
+        display.text = "\(currentCount) + \(multipler) = \(temp)"
+        currentCount = temp
+        
+        if (currentCount / multipler == 10) {
+            reset(true)
+        }
     }
     
     func reset (flag: Bool) {
@@ -43,6 +53,8 @@ class ViewController: UIViewController {
         playButton.hidden = !flag
         display.hidden = flag
         addButton.hidden = flag
+        
+        currentCount = 0
     }
 }
 
